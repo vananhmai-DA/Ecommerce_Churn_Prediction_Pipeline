@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: int_churn_customers_cleaned
+    description: "Cleaned customer churn dataset after deduplication, standardization, and basic missing value handling."
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: churn
+        description: "Target variable. 1 means churned, 0 means not churned."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+      - name: complain
+        description: "Whether the customer has complained."
+        tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+      - name: city_tier
+        description: "City tier of the customer."
+        tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3]
+
+      - name: satisfaction_score
+        description: "Customer satisfaction score."
+        tests:
+          - not_null
+          
