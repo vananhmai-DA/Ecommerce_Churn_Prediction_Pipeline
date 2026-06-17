@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: raw
+    database: churn_project
+    schema: raw
+    tables:
+      - name: churn_customers_current
+        description: "Current raw customer churn data loaded from CSV ingestion pipeline."
+        columns:
+          - name: customer_id
+            description: "Unique customer identifier."
+            tests:
+              - not_null
+
+          - name: churn
+            description: "Target variable. 1 means customer churned, 0 means customer did not churn."
+            tests:
+              - not_null
+              - accepted_values:
+                  arguments:
+                    values: [0, 1]
+
+          - name: batch_id
+            description: "Batch ID from ingestion process."
+            tests:
+              - not_null
+
+          - name: loaded_at
+            description: "Timestamp when data was loaded into PostgreSQL."
+            tests:
+              - not_null

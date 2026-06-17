@@ -16,11 +16,11 @@ clean-targets:
 models:
   churn_dbt:
     staging:
-      +schema: analytics
+      +schema: staging
       +materialized: view
     silver:
-      +schema: analytics
+      +schema: silver
       +materialized: table
     gold:
-      +schema: analytics
+      +schema: gold
       +materialized: table
