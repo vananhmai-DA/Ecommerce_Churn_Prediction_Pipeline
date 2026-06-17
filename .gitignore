@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Data files
+data/raw/*
+!data/raw/.gitkeep
+
+# Models
+06_models/*.pkl
+06_models/*.joblib
+
+# Outputs
+05_outputs/predictions/*
+05_outputs/segments/*
+05_outputs/reports/*
+05_outputs/figures/*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
