@@ -33,3 +33,5 @@ logs/
 .DS_Store
 Thumbs.db
 02_dbt_churn/profiles.yml
+
+docker-compose.yml
