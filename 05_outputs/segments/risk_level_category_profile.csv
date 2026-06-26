@@ -1,0 +1,19 @@
+risk_level,preferred_order_cat,customers,share_within_risk_level
+High Risk,fashion,118,0.13833528722157093
+High Risk,grocery,19,0.022274325908558032
+High Risk,laptop & accessory,185,0.21688159437280188
+High Risk,mobile,198,0.2321219226260258
+High Risk,mobile phone,327,0.38335287221570924
+High Risk,others,6,0.007033997655334115
+Low Risk,fashion,698,0.14914529914529914
+Low Risk,grocery,390,0.08333333333333333
+Low Risk,laptop & accessory,1839,0.39294871794871794
+Low Risk,mobile,590,0.12606837606837606
+Low Risk,mobile phone,917,0.19594017094017094
+Low Risk,others,246,0.052564102564102565
+Medium Risk,fashion,10,0.10309278350515463
+Medium Risk,grocery,1,0.010309278350515464
+Medium Risk,laptop & accessory,26,0.26804123711340205
+Medium Risk,mobile,21,0.21649484536082475
+Medium Risk,mobile phone,27,0.27835051546391754
+Medium Risk,others,12,0.12371134020618557
